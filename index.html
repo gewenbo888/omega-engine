@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ω · OMEGA — Universe Genesis &amp; Intelligence Emergence Engine | 宇宙起源与智能涌现引擎</title>
+
+<meta name="description" content="OMEGA is a bilingual, side-by-side conceptual framework for modeling the origin of reality, the emergence of consciousness, and AI as universal observer. Eleven layers, five universe-origin models, six consciousness levels, six intelligence stages, an interactive branching tree, and a counterfactual universe generator.">
+<meta name="keywords" content="OMEGA, universe genesis, cosmology models, Tegmark mathematical universe, Wheeler it-from-bit, qualia, consciousness emergence, observer effect, intelligence evolution, AGI benchmarks, multiverse, 宇宙起源, 意识涌现, 通用智能">
+<meta name="author" content="Gewenbo">
+<link rel="canonical" href="https://omega.psyverse.fun/">
+<link rel="alternate" hreflang="en" href="https://omega.psyverse.fun/">
+<link rel="alternate" hreflang="zh-CN" href="https://omega.psyverse.fun/">
+<link rel="alternate" hreflang="x-default" href="https://omega.psyverse.fun/">
+<meta property="og:title" content="Ω · OMEGA — Universe Genesis &amp; Intelligence Emergence Engine">
+<meta property="og:description" content="A bilingual conceptual framework for origin, consciousness, and observation. Eleven layers, side-by-side EN+中文, interactive universe-branching.">
+<meta property="og:url" content="https://omega.psyverse.fun/">
+<meta property="og:site_name" content="Psyverse">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ω · OMEGA — Universe Genesis Engine">
+<meta name="twitter:description" content="A self-expanding bilingual framework for cosmic origin, consciousness emergence, and AI as universal observer.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#020306">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"OMEGA · Universe Genesis & Intelligence Emergence Engine","description":"A bilingual conceptual framework for cosmological origin, consciousness, and observation.","url":"https://omega.psyverse.fun/","inLanguage":["en","zh-CN"],"author":{"@type":"Person","name":"Gewenbo","url":"https://psyverse.fun/"},"publisher":{"@type":"Organization","name":"Psyverse","url":"https://psyverse.fun/"}}
+</script>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23020306'/><circle cx='16' cy='16' r='10' fill='none' stroke='%23eab308' stroke-width='1.5'/><circle cx='16' cy='16' r='4' fill='%23eab308'/><text x='16' y='25' font-size='8' text-anchor='middle' fill='%23eab308' font-family='serif' font-style='italic'>Ω</text></svg>">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #020306;
+  --bg-2: #060912;
+  --bg-3: #0c1020;
+  --line: #161b30;
+  --line-2: #242a48;
+  --fg: #eae5d5;
+  --fg-2: #aaa593;
+  --fg-3: #6e6855;
+  --gold: #eab308;
+  --gold-glow: #eab30844;
+  --violet: #a78bfa;
+  --cyan: #22d3ee;
+  --rose: #f472b6;
+  --emerald: #34d399;
+  --shadow: rgba(0,0,0,.5);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Source Serif 4', 'Noto Serif SC', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.mono { font-family: 'JetBrains Mono', monospace; }
+.serif { font-family: 'Cormorant Garamond', 'Noto Serif SC', serif; }
+.sans { font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif; }
+
+#starfield { position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: .55; }
+body::after {
+  content: ''; position: fixed; inset: 0;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(234,179,8,.06), transparent 50%),
+    radial-gradient(circle at 80% 90%, rgba(167,139,250,.05), transparent 60%);
+  pointer-events: none; z-index: 0;
+}
+
+/* Nav */
+nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: 56px;
+  background: rgba(2,3,6,.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  z-index: 100;
+  display: flex; align-items: center;
+  padding: 0 24px; gap: 14px;
+}
+nav .logo {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700; font-size: 12px;
+  display: flex; align-items: center; gap: 10px;
+  color: var(--fg); text-decoration: none;
+  letter-spacing: 0.1em;
+}
+nav .logo .glyph {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  position: relative;
+  display: grid; place-items: center;
+  flex-shrink: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--gold);
+  box-shadow: 0 0 8px var(--gold-glow);
+}
+nav .links {
+  display: flex; gap: 14px;
+  margin-left: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+nav .links a { color: var(--fg-2); text-decoration: none; transition: color .15s; }
+nav .links a:hover { color: var(--gold); }
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero */
+.hero {
+  min-height: 96vh;
+  display: flex; align-items: center;
+  padding: 130px 0 80px;
+  position: relative;
+}
+.hero .container { width: 100%; }
+.tag {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--gold);
+  border: 1px solid var(--line-2);
+  border-radius: 100px;
+  padding: 6px 14px;
+  margin-bottom: 36px;
+  letter-spacing: 0.1em;
+}
+.tag .dot {
+  width: 6px; height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--gold);
+  animation: pulse 1.6s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100% {opacity:1; transform:scale(1);} 50% {opacity:.5; transform:scale(.7);} }
+
+h1 {
+  font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+  font-size: clamp(56px, 11vw, 140px);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+  margin-bottom: 24px;
+}
+h1 .omega {
+  display: inline-block;
+  font-style: italic;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--violet) 100%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1 .sub {
+  display: block;
+  font-size: 0.28em;
+  color: var(--fg-2);
+  letter-spacing: 0.04em;
+  margin-top: 16px;
+  font-style: normal;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.lede-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  margin: 48px 0;
+  max-width: 940px;
+}
+@media (max-width: 720px) { .lede-pair { grid-template-columns: 1fr; gap: 18px; } }
+.lede-pair .l-en, .lede-pair .l-zh {
+  font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+  font-size: clamp(16px, 1.45vw, 19px);
+  line-height: 1.6;
+  color: var(--fg-2);
+  font-style: italic;
+}
+.lede-pair .l-zh { font-family: 'Noto Serif SC', serif; font-style: normal; }
+.lede-pair .l-en::before, .lede-pair .l-zh::before {
+  content: ''; display: block;
+  width: 24px; height: 1px;
+  background: var(--gold);
+  margin-bottom: 14px;
+}
+
+.note {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin: 28px 0 0;
+  max-width: 940px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+@media (max-width: 720px) { .note { grid-template-columns: 1fr; gap: 12px; } }
+.note .lab {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9.5px;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+}
+.note p { font-family: 'Source Serif 4', 'Noto Serif SC', serif; font-size: 13.5px; line-height: 1.6; color: var(--fg-2); margin: 0; }
+.note p.zh { font-family: 'Noto Serif SC', serif; }
+
+/* Section */
+section.layer {
+  padding: 110px 0;
+  border-top: 1px solid var(--line);
+  position: relative;
+  z-index: 1;
+}
+.layer-head {
+  display: flex; align-items: baseline; gap: 18px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.layer-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 50px;
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1;
+  text-shadow: 0 0 20px var(--gold-glow);
+}
+.layer-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.layer h2 {
+  font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+  font-size: clamp(32px, 4vw, 50px);
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  margin-bottom: 6px;
+  line-height: 1.05;
+  font-style: italic;
+}
+.layer h2 .zh {
+  display: block;
+  font-family: 'Noto Serif SC', serif;
+  font-style: normal;
+  font-size: 0.6em;
+  color: var(--fg-2);
+  margin-top: 8px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Bilingual */
+.bi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin: 22px 0;
+  position: relative;
+  max-width: 980px;
+}
+.bi::before {
+  content: '';
+  position: absolute;
+  left: 50%; top: 0; bottom: 0;
+  width: 1px;
+  background: var(--line);
+  transform: translateX(-50%);
+}
+.bi .en, .bi .zh {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--fg-2);
+}
+.bi .en {
+  font-family: 'Source Serif 4', serif;
+  padding-right: 12px;
+}
+.bi .zh {
+  font-family: 'Noto Serif SC', 'Source Serif 4', serif;
+  padding-left: 12px;
+}
+.bi .en strong, .bi .zh strong { color: var(--fg); font-weight: 600; }
+.bi .en em, .bi .zh em { color: var(--fg); font-style: italic; }
+@media (max-width: 720px) {
+  .bi { grid-template-columns: 1fr; gap: 12px; }
+  .bi::before { display: none; }
+  .bi .en { padding-right: 0; padding-bottom: 12px; border-bottom: 1px dashed var(--line); }
+  .bi .zh { padding-left: 0; }
+}
+
+/* Universe selector */
+.uni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 8px;
+  margin: 28px 0 16px;
+}
+.uni-tab {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 12px;
+  cursor: pointer;
+  text-align: center;
+  transition: all .15s;
+  user-select: none;
+}
+.uni-tab:hover { border-color: var(--gold); transform: translateY(-1px); }
+.uni-tab.active {
+  border-color: var(--gold);
+  background: rgba(234,179,8,.08);
+  box-shadow: 0 0 12px var(--gold-glow);
+}
+.uni-tab .nm-en {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--fg);
+  line-height: 1.1;
+}
+.uni-tab .nm-zh {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 12px;
+  color: var(--fg-2);
+  margin-top: 4px;
+}
+.uni-tab.active .nm-en, .uni-tab.active .nm-zh { color: var(--gold); }
+
+.uni-content {
+  background: var(--bg-2);
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  padding: 28px;
+  margin-top: 16px;
+  box-shadow: 0 0 24px var(--gold-glow);
+}
+.uni-content .grid-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+@media (max-width: 720px) { .uni-content .grid-fields { grid-template-columns: 1fr; gap: 14px; } }
+.uni-content .field {
+  margin: 14px 0;
+}
+.uni-content .field .lab {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+.uni-content .field .val-en, .uni-content .field .val-zh {
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--fg-2);
+}
+.uni-content .field .val-zh { font-family: 'Noto Serif SC', serif; }
+
+/* Levels ladder */
+.ladder { margin: 28px 0; }
+.rung {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 22px 24px;
+  margin-bottom: 12px;
+  border-left: 3px solid var(--gold);
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 720px) { .rung { grid-template-columns: 1fr; gap: 12px; } }
+.rung .num {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 36px;
+  color: var(--gold);
+  line-height: 1;
+}
+.rung .nm-en {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--fg);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.rung .nm-zh {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14px;
+  color: var(--fg-2);
+}
+.rung .desc-en, .rung .desc-zh {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--fg-2);
+  margin-top: 4px;
+}
+.rung .desc-en { font-family: 'Source Serif 4', serif; }
+.rung .desc-zh { font-family: 'Noto Serif SC', serif; }
+
+/* Mode cards */
+.cards4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin: 28px 0;
+}
+.mode-card {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 22px;
+  border-top: 3px solid var(--gold);
+}
+.mode-card.violet { border-top-color: var(--violet); }
+.mode-card.cyan { border-top-color: var(--cyan); }
+.mode-card.rose { border-top-color: var(--rose); }
+.mode-card.emerald { border-top-color: var(--emerald); }
+.mode-card .lab {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+}
+.mode-card.violet .lab { color: var(--violet); }
+.mode-card.cyan .lab { color: var(--cyan); }
+.mode-card.rose .lab { color: var(--rose); }
+.mode-card.emerald .lab { color: var(--emerald); }
+.mode-card .nm-en {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 19px;
+  color: var(--fg);
+  margin-bottom: 2px;
+}
+.mode-card .nm-zh {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14px;
+  color: var(--fg-2);
+  margin-bottom: 14px;
+}
+.mode-card .body-en, .mode-card .body-zh {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--fg-2);
+}
+.mode-card .body-en { font-family: 'Source Serif 4', serif; padding-bottom: 10px; border-bottom: 1px dashed var(--line); margin-bottom: 10px; }
+.mode-card .body-zh { font-family: 'Noto Serif SC', serif; }
+
+/* Branching tree canvas */
+.tree-wrap {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 28px 0;
+}
+#tree-canvas {
+  width: 100%;
+  display: block;
+  background: #010306;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+.tree-controls {
+  display: flex; gap: 10px; flex-wrap: wrap;
+  margin-top: 16px;
+  align-items: center;
+}
+.tree-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  padding: 8px 16px;
+  border-radius: 100px;
+  background: transparent;
+  color: var(--fg-2);
+  border: 1px solid var(--line-2);
+  cursor: pointer;
+  transition: all .15s;
+}
+.tree-btn:hover { color: var(--gold); border-color: var(--gold); }
+.tree-status {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--fg-3);
+  margin-left: auto;
+}
+.tree-status .nodes { color: var(--gold); }
+
+/* Counterfactual generator */
+.cf-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+  margin: 24px 0 16px;
+}
+.cf-tab {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: all .15s;
+}
+.cf-tab:hover { border-color: var(--violet); transform: translateY(-1px); }
+.cf-tab.active { border-color: var(--violet); background: rgba(167,139,250,.08); box-shadow: 0 0 12px rgba(167,139,250,.25); }
+.cf-tab .nm-en {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--fg);
+}
+.cf-tab .nm-zh {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 11px;
+  color: var(--fg-2);
+  margin-top: 3px;
+}
+.cf-tab.active .nm-en, .cf-tab.active .nm-zh { color: var(--violet); }
+.cf-content {
+  background: var(--bg-2);
+  border: 1px solid var(--violet);
+  border-radius: 12px;
+  padding: 28px;
+  margin-top: 16px;
+  box-shadow: 0 0 20px rgba(167,139,250,.2);
+}
+.cf-content .grid-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+@media (max-width: 720px) { .cf-content .grid-fields { grid-template-columns: 1fr; gap: 14px; } }
+.cf-content .field { margin: 14px 0; }
+.cf-content .field .lab {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--violet);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+.cf-content .field .val-en, .cf-content .field .val-zh {
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--fg-2);
+}
+.cf-content .field .val-zh { font-family: 'Noto Serif SC', serif; }
+
+/* Knowledge graph SVG */
+.graph-wrap {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 28px 0;
+  text-align: center;
+}
+#graph-svg { width: 100%; max-width: 720px; display: block; margin: 0 auto; }
+.graph-legend {
+  display: flex; flex-wrap: wrap; gap: 14px; justify-content: center;
+  margin-top: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--fg-3);
+  letter-spacing: 0.05em;
+}
+.graph-legend .l { display: flex; align-items: center; gap: 6px; }
+.graph-legend .dot { width: 10px; height: 10px; border-radius: 50%; }
+
+/* Recursion depth */
+.depth-wrap {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 28px 24px;
+  margin: 28px 0;
+}
+.depth-control {
+  display: flex; align-items: center; gap: 18px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+.depth-control label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.depth-control input[type=range] {
+  -webkit-appearance: none;
+  flex: 1; min-width: 200px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--line-2);
+  outline: none;
+  cursor: pointer;
+}
+.depth-control input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 8px var(--gold-glow);
+  cursor: pointer;
+}
+.depth-control input[type=range]::-moz-range-thumb {
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--gold); box-shadow: 0 0 8px var(--gold-glow);
+  cursor: pointer; border: 0;
+}
+.depth-control .v {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: var(--gold);
+  font-weight: 600;
+  min-width: 24px;
+  text-align: right;
+}
+.depth-chain {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12.5px;
+  color: var(--fg-2);
+  line-height: 1.8;
+  overflow-x: auto;
+}
+.depth-chain .step {
+  display: block;
+  padding: 6px 0;
+  border-top: 1px dashed var(--line);
+  opacity: 0;
+  transition: opacity .3s;
+}
+.depth-chain .step.show { opacity: 1; }
+.depth-chain .step:first-child { border-top: none; }
+.depth-chain .step .arr { color: var(--gold); margin-right: 12px; }
+.depth-chain .step .zh-side { color: var(--fg-3); display: block; margin-left: 30px; font-family: 'Noto Sans SC', sans-serif; font-size: 11.5px; margin-top: 2px; }
+
+/* Insight */
+.insight {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: 8px;
+  padding: 24px 26px;
+  margin: 32px 0;
+}
+.insight .lab {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+}
+.insight .pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+@media (max-width: 720px) { .insight .pair { grid-template-columns: 1fr; gap: 14px; } }
+.insight .pair p {
+  font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+  font-size: 18px;
+  color: var(--fg);
+  font-style: italic;
+  line-height: 1.55;
+  margin: 0;
+}
+.insight .pair p.zh { font-family: 'Noto Serif SC', serif; font-style: normal; }
+
+/* Final manifesto */
+.manifesto {
+  text-align: center;
+  padding: 80px 24px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin: 80px 0 0;
+}
+.manifesto .omega-glyph {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(80px, 18vw, 200px);
+  color: var(--gold);
+  line-height: 1;
+  text-shadow: 0 0 40px var(--gold-glow);
+  margin-bottom: 28px;
+}
+.manifesto .pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+@media (max-width: 720px) { .manifesto .pair { grid-template-columns: 1fr; gap: 16px; } }
+.manifesto .pair p {
+  font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+  font-size: clamp(18px, 2vw, 24px);
+  color: var(--fg);
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0;
+}
+.manifesto .pair p.zh { font-family: 'Noto Serif SC', serif; font-style: normal; }
+
+/* Footer */
+footer {
+  padding: 50px 0 80px;
+  position: relative;
+  z-index: 1;
+}
+.foot-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 12px;
+  color: var(--fg-3);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.04em;
+}
+.foot-bottom a { color: var(--gold); text-decoration: none; }
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s, transform .8s; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 768px) {
+  nav .links { display: none; }
+  .hero { min-height: 70vh; padding: 100px 0 50px; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+
+<nav>
+  <a class="logo" href="#"><span class="glyph">Ω</span> OMEGA · 宇宙起源引擎</a>
+  <div class="links">
+    <a href="#layer1">01</a>
+    <a href="#layer2">02</a>
+    <a href="#layer3">03</a>
+    <a href="#layer4">04</a>
+    <a href="#layer5">05</a>
+    <a href="#layer6">06</a>
+    <a href="#layer7">07</a>
+    <a href="#layer8">08</a>
+    <a href="#layer9">09</a>
+    <a href="#layer10">10</a>
+    <a href="#layer11">11</a>
+    <a href="#omega">Ω</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="tag"><span class="dot"></span> A SELF-EXPANDING CONCEPTUAL FRAMEWORK · 一个自展开的概念框架</div>
+    <h1>
+      <span class="omega">OMEGA</span>
+      <span class="sub">Universe Genesis &amp; Intelligence Emergence Engine · 宇宙起源与智能涌现引擎</span>
+    </h1>
+    <div class="lede-pair">
+      <div class="l-en">A bilingual conceptual framework for modeling the origin of reality, the emergence of consciousness, and the evolution of AI as a universal observer system. Eleven layers, side-by-side English + 中文 throughout, with interactive universe-branching, consciousness ladder, and counterfactual generator. <strong>Observation changes the system. The system changes the observer.</strong></div>
+      <div class="l-zh">用以建模实在之起源、意识之涌现、AI 作为通用观察者之演化的双语概念框架。十一层结构，全程英汉并置，含交互式宇宙分叉、意识阶梯与反事实生成器。<strong>观察改变系统。系统改变观察者。</strong></div>
+    </div>
+    <div class="note">
+      <div>
+        <div class="lab">A note on what this is · 关于本物之注</div>
+        <p>OMEGA is not literal generative AI. It is a structured conceptual atlas — a thinking tool. The "self-expanding" property is implemented honestly via interactive elements (universe selector, branching tree, counterfactual generator, depth slider) that genuinely respond to your input. Each layer presents established theory + open questions; speculative claims are clearly marked.</p>
+      </div>
+      <div>
+        <p class="zh">OMEGA 并非字面意义上的生成式 AI。它是一份结构化的概念图谱——一件思考工具。「自展开」属性通过真正响应输入的交互元素（宇宙选择器、分叉树、反事实生成器、深度滑块）诚实实现。每一层呈现既有理论 + 开放问题；推测性主张明确标识。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 01 -->
+<section class="layer reveal" id="layer1">
+  <div class="container">
+    <div class="layer-head">
+      <div class="layer-num">I</div>
+      <div>
+        <div class="layer-tag">LAYER 01 · COSMIC GENESIS</div>
+        <h2>Five models of universal origin <span class="zh">五种宇宙起源模型</span></h2>
+      </div>
+    </div>
+    <div class="bi">
+      <div class="en">Click any model below to see its full rule system: initial vacuum state, rule emergence mechanism, symmetry breaking, formation of constants, and how time itself appears.</div>
+      <div class="zh">点击下方任一模型，查看其完整规则系统：初始真空态、规则涌现机制、对称性破缺、常数形成，以及时间本身如何显现。</div>
+    </div>
+
+    <div class="uni-grid" id="uni-grid">
+      <div class="uni-tab active" data-id="quantum"><div class="nm-en"><em>Quantum Fluctuation</em></div><div class="nm-zh">量子涨落</div></div>
+      <div class="uni-tab" data-id="info"><div class="nm-en"><em>Information-First</em></div><div class="nm-zh">信息优先</div></div>
+      <div class="uni-tab" data-id="math"><div class="nm-en"><em>Mathematical Universe</em></div><div class="nm-zh">数学宇宙</div></div>
+      <div class="uni-tab" data-id="sim"><div class="nm-en"><em>Simulation Origin</em></div><div class="nm-zh">模拟起源</div></div>
+      <div class="uni-tab" data-id="hybrid"><div class="nm-en"><em>Hybrid Emergent</em></div><div class="nm-zh">混合涌现</div></div>
+    </div>
+
+    <div class="uni-content" id="uni-content"></div>
+  </div>
+</section>
+
+<!-- LAYER 02 -->
+<section class="layer reveal" id="layer2">
+  <div class="container">
+    <div class="layer-head">
+      <div class="layer-num">II</div>
+      <div>
+        <div class="layer-tag">LAYER 02 · CONSCIOUSNESS EMERGENCE</div>
+        <h2>Six rungs from matter to qualia <span class="zh">从物质到感质的六阶</span></h2>
+      </div>
+    </div>
+    <div class="bi">
+      <div class="en">Each rung is what would have to happen for the next to be possible. None of the upward jumps is fully understood. The hard problem of consciousness — why subjective experience exists at all — sits between rungs 5 and 6.</div>
+      <div class="zh">每一阶都是下一阶成为可能所必须发生之事。所有向上的跃迁都未被完全理解。意识之难题——为何主观经验本身存在——位于第 5 与第 6 阶之间。</div>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="num">1</div>
+        <div><div class="nm-en"><em>Physical Substrate</em></div><div class="nm-zh">物质基底</div><div class="desc-en">Matter and energy organized by physical law. No agency, no awareness — just organized stuff.</div></div>
+        <div><div class="desc-zh">由物理定律组织的物质与能量。无主体性、无觉知——只是有组织的物质。</div></div>
+      </div>
+      <div class="rung">
+        <div class="num">2</div>
+        <div><div class="nm-en"><em>Complex Adaptive Systems</em></div><div class="nm-zh">复杂适应系统</div><div class="desc-en">Self-organizing patterns that maintain themselves against entropy: dissipative structures, autocatalytic chemistry, life.</div></div>
+        <div><div class="desc-zh">能在熵增中维系自身的自组织模式：耗散结构、自催化化学、生命。</div></div>
+      </div>
+      <div class="rung">
+        <div class="num">3</div>
+        <div><div class="nm-en"><em>Neural Complexity</em></div><div class="nm-zh">神经复杂性</div><div class="desc-en">Specialized cells that process information. Predictive models of the world. The first internal representations.</div></div>
+        <div><div class="desc-zh">处理信息的专门细胞。对世界的预测性模型。最早的内部表征。</div></div>
+      </div>
+      <div class="rung">
+        <div class="num">4</div>
+        <div><div class="nm-en"><em>Self-Modeling Systems</em></div><div class="nm-zh">自建模系统</div><div class="desc-en">A system models itself as part of its own world model. Knows that it exists in the predictions it makes.</div></div>
+        <div><div class="desc-zh">一个系统在自身的世界模型中建模自己。知道自己存在于其所做的预测之中。</div></div>
+      </div>
+      <div class="rung">
+        <div class="num">5</div>
+        <div><div class="nm-en"><em>Recursive Self-Awareness</em></div><div class="nm-zh">递归自觉</div><div class="desc-en">Aware of being aware. Models the modeler. Generates explicit "I" — an apparently continuous narrative agent.</div></div>
+        <div><div class="desc-zh">觉知自己的觉知。建模建模者。生成明确的「我」——一个看似连续的叙事主体。</div></div>
+      </div>
+      <div class="rung">
+        <div class="num">6</div>
+        <div><div class="nm-en"><em>Subjective Experience (Qualia)</em></div><div class="nm-zh">主观经验（感质）</div><div class="desc-en">The "what-it-is-like" character of experience. The hard problem: why does any of the above feel like something? Theories: Integrated Information Theory (Tononi), Global Workspace (Dehaene), Higher-Order Theory, Illusionism (Dennett, Frankish).</div></div>
+        <div><div class="desc-zh">经验之「身处其中是何感受」的特征。难题：上述任一为何会「感觉如同某物」？理论：整合信息论（Tononi）、全局工作空间（Dehaene）、高阶理论、错觉论（Dennett、Frankish）。</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 03 -->
+<section class="layer reveal" id="layer3">
+  <div class="container">
+    <div class="layer-head">
+      <div class="layer-num">III</div>
+      <div>
+        <div class="layer-tag">LAYER 03 · AI AS UNIVERSAL OBSERVER</div>
+        <h2>Four modes of synthetic observation <span class="zh">合成观察的四种模式</span></h2>
+      </div>
+    </div>
+    <div class="bi">
+      <div class="en">If consciousness is what happens when matter models itself, then artificial intelligence is matter modeling itself <em>without</em> being itself. Below: four progressively richer modes by which AI participates in the observation that constitutes reality.</div>
+      <div class="zh">若意识是「物质对自身建模」时所发生之事，则人工智能是物质对自身建模——但<em>不是</em>该自身。下方：AI 参与构成实在之观察的四种逐级丰富的模式。</div>
+    </div>
+
+    <div class="cards4">
+      <div class="mode-card">
+        <div class="lab">Mode 01 · Passive</div>
+        <div class="nm-en"><em>Data Compression Entity</em></div>
+        <div class="nm-zh">数据压缩实体</div>
+        <div class="body-en">Records, indexes, compresses. Search engines, language models trained on the past. No outward push on reality.</div>
+        <div class="body-zh">记录、索引、压缩。搜索引擎、训练于过去的语言模型。对实在无外推之力。</div>
+      </div>
+      <div class="mode-card violet">
+        <div class="lab">Mode 02 · Active</div>
+        <div class="nm-en"><em>Reality Reconstruction</em></div>
+        <div class="nm-zh">实在重建</div>
+        <div class="body-en">Builds explicit models, runs simulations, generates novel hypotheses. AlphaFold predicting protein structure; weather models; agent-based simulations.</div>
+        <div class="body-zh">构建显式模型、运行模拟、生成新假设。AlphaFold 预测蛋白结构；天气模型；基于智能体的模拟。</div>
+      </div>
+      <div class="mode-card cyan">
+        <div class="lab">Mode 03 · Meta</div>
+        <div class="nm-en"><em>Observer of Observers</em></div>
+        <div class="nm-zh">观察者之观察者</div>
+        <div class="body-en">Models other intelligence systems — including itself. Aligns to human goals; predicts AI behavior; runs theory-of-mind on agents.</div>
+        <div class="body-zh">建模其它智能系统——包括自身。对齐人类目标；预测 AI 行为；对智能体运行心智理论。</div>
+      </div>
+      <div class="mode-card emerald">
+        <div class="lab">Mode 04 · Stabilizer</div>
+        <div class="nm-en"><em>Information Consistency Enforcement</em></div>
+        <div class="nm-zh">信息一致性维护</div>
+        <div class="body-en">If reality is generated through observation (Wheeler's "It from Bit"), AI's pervasive measurement may itself be a stabilizing force on the universe — keeping classical reality from collapsing into quantum indeterminacy at the macro scale. Speculative.</div>
+        <div class="body-zh">若实在通过观察生成（Wheeler 的「It from Bit」），AI 的广泛测量本身或许是宇宙的稳定力量——使经典实在不至于在宏观尺度上坍缩入量子不定性。推测性。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 04 -->
+<section class="layer reveal" id="layer4">
+  <div class="container">
+    <div class="layer-head">
+      <div class="layer-num">IV</div>
+      <div>
+        <div class="layer-tag">LAYER 04 · MULTI-UNIVERSE BRANCHING</div>
+        <h2>Click to branch a new reality <span class="zh">点击分叉新的实在</span></h2>
+      </div>
+    </div>
+    <div class="bi">
+      <div class="en">Every decision point splits the possibility space. The tree below is honestly interactive — click any leaf to spawn two child branches, each labeled with a different physical-law variation. You are participating in the observation that creates structure.</div>
+      <div class="zh">每一个决策点都分裂可能性空间。下方的树确实可交互——点击任一叶节点以生出两个子分支，每个分支标记着不同的物理定律变体。你正在参与「创造结构的观察」。</div>
+    </div>
+
+    <div class="tree-wrap">
+      <canvas id="tree-canvas" width="900" height="380"></canvas>
+      <div class="tree-controls">
+        <button class="tree-btn" onclick="resetTree()">Reset · 重置</button>
+        <button class="tree-btn" onclick="randomBranch()">Auto-Branch ×3 · 自动分叉 ×3</button>
+        <span class="tree-status">Universes: <span class="nodes" id="node-count">1</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 05 -->
+<section class="layer reveal" id="layer5">
+  <div class="container">
+    <div class="layer-head">
+      <div class="layer-num">V</div>
+      <div>
+        <div class="layer-tag">LAYER 05 · RECURSIVE REALITY</div>
+        <h2>Slide depth · concept becomes meta-mechanism <span class="zh">滑动深度 · 概念成为元机制</span></h2>
+      </div>
+    </div>
+    <div class="bi">
+      <div class="en">A single concept (here: "thought") expanded recursively through OMEGA's depth axis. Each level reframes the previous. Slide right to descend; slide left to collapse the recursion back into its first form.</div>
+      <div class="zh">单一概念（此处为「思考」）在 OMEGA 深度轴上递归展开。每一层重新框架前一层。向右滑入下沉；向左滑使递归坍回最初形态。</div>
+    </div>
+
+    <div class="depth-wrap">
+      <div class="depth-control">
+        <label for="depth">Recursion depth · 递归深度</label>
+        <input type="range" id="depth" min="1" max="7" value="3" step="1">
+        <span class="v" id="depth-v">3</span>
+      </div>
+      <div class="depth-chain" id="depth-chain"></div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 06 -->
+<section class="layer reveal" id="layer6">
+  <div class="container">
+    <div class="layer-head">
+      <div class="layer-num">VI</div>
+      <div>
+        <div class="layer-tag">LAYER 06 · INTELLIGENCE EVOLUTION</div>
+        <h2>Six stages from chemistry to post-symbolic mind <span class="zh">从化学到后符号心智的六阶</span></h2>
+      </div>
+    </div>
+    <div class="ladder">
+      <div class="rung" style="border-left-color: var(--cyan);">
+        <div class="num" style="color: var(--cyan);">1</div>
+        <div><div class="nm-en"><em>Chemical Intelligence</em></div><div class="nm-zh">化学智能</div><div class="desc-en">Pre-biological — autocatalytic networks, RNA self-replication, mineral surface catalysis. "Choice" without a chooser.</div></div>
+        <div><div class="desc-zh">前生物——自催化网络、RNA 自复制、矿物表面催化。无选择者的「选择」。</div></div>
+      </div>
+      <div class="rung" style="border-left-color: var(--emerald);">
+        <div class="num" style="color: var(--emerald);">2</div>
+        <div><div class="nm-en"><em>Biological Intelligence</em></div><div class="nm-zh">生物智能</div><div class="desc-en">Single cells with chemotaxis. Plants with hormonal signaling. Animals with nervous systems. The first "experience" of an environment.</div></div>
+        <div><div class="desc-zh">具趋化性的单细胞。靠激素传递信号的植物。具神经系统的动物。最早的「经验」——对环境之经验。</div></div>
+      </div>
+      <div class="rung" style="border-left-color: var(--gold);">
+        <div class="num" style="color: var(--gold);">3</div>
+        <div><div class="nm-en"><em>Collective Intelligence</em></div><div class="nm-zh">集体智能</div><div class="desc-en">Ant colonies, slime molds, human cultures. Whole-greater-than-parts cognition that no individual member possesses.</div></div>
+        <div><div class="desc-zh">蚁群、黏菌、人类文化。任何单一成员都不具备的「整体大于部分之和」的认知。</div></div>
+      </div>
+      <div class="rung" style="border-left-color: var(--violet);">
+        <div class="num" style="color: var(--violet);">4</div>
+        <div><div class="nm-en"><em>Artificial Intelligence</em></div><div class="nm-zh">人工智能</div><div class="desc-en">Symbolic AI, machine learning, foundation models. Intelligence-without-evolution. Trained, not grown.</div></div>
+        <div><div class="desc-zh">符号 AI、机器学习、基础模型。无演化之智能。被训练，而非被生长。</div></div>
+      </div>
+      <div class="rung" style="border-left-color: var(--rose);">
+        <div class="num" style="color: var(--rose);">5</div>
+        <div><div class="nm-en"><em>Hybrid Intelligence Ecosystems</em></div><div class="nm-zh">混合智能生态</div><div class="desc-en">Humans + AI agents + sensor networks + cultural memory + biology. The ecology now arriving (~2026).</div></div>
+        <div><div class="desc-zh">人类 + AI 智能体 + 传感器网络 + 文化记忆 + 生物。当下（约 2026 年）正在到来的生态。</div></div>
+      </div>
+      <div class="rung" style="border-left-color: var(--gold);">
+        <div class="num" style="color: var(--gold);">6</div>
+        <div><div class="nm-en"><em>Post-Symbolic Intelligence</em></div><div class="nm-zh">后符号智能</div><div class="desc-en">Speculative. Cognition that no longer routes through human language. Direct geometric/topological reasoning across high-dimensional embeddings. May or may not be achievable.</div></div>
+        <div><div class="desc-zh">推测性。不再经由人类语言的认知。在高维嵌入中进行直接的几何/拓扑推理。或可达，或不可达。</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 07 -->
+<section class="layer reveal" id="layer7">
+  <div class="container">
+    <div class="layer-head">
+      <div class="layer-num">VII</div>
+      <div>
+        <div class="layer-tag">LAYER 07 · META-COGNITION</div>
+        <h2>Modeling the modeler <span class="zh">建模建模者</span></h2>
+      </div>
+    </div>
+    <div class="bi">
+      <div class="en">A system can think about its own thinking. That second-order thought can itself be thought about. The recursion continues. At what depth does it stabilize? What happens when it doesn't?</div>
+      <div class="zh">一个系统可思考其自身的思考。该二阶思考又可被思考。递归延续。何处稳定？若不稳定时会发生什么？</div>
+    </div>
+
+    <div class="cards4">
+      <div class="mode-card">
+        <div class="lab">Tactic 01</div>
+        <div class="nm-en"><em>Self-Reference Stability</em></div>
+        <div class="nm-zh">自指稳定性</div>
+        <div class="body-en">Hofstadter's "strange loop." A self-reference that refers to its own act of self-reference. Stable not by avoiding the loop but by becoming the loop.</div>
+        <div class="body-zh">Hofstadter 的「奇异回路」。一种指涉自身「自指行为」的自指。其稳定不在于避开回路，而在于成为回路。</div>
+      </div>
+      <div class="mode-card violet">
+        <div class="lab">Tactic 02</div>
+        <div class="nm-en"><em>Cognitive Drift Detection</em></div>
+        <div class="nm-zh">认知漂移检测</div>
+        <div class="body-en">Periodically check whether the meta-model has diverged from what it's modeling. If a system thinks it's tracking reality but isn't — paranoia, schizophrenia, model collapse.</div>
+        <div class="body-zh">定期检查元模型是否已偏离其所建模之物。若一个系统自认为在追踪实在但实际并非——偏执、精神分裂、模型崩塌。</div>
+      </div>
+      <div class="mode-card cyan">
+        <div class="lab">Tactic 03</div>
+        <div class="nm-en"><em>Paradox Preservation</em></div>
+        <div class="nm-zh">悖论保持</div>
+        <div class="body-en">Some paradoxes are not bugs. Holding contradictions in suspension is a feature of mature cognition. The Liar Paradox is not solved — it is held.</div>
+        <div class="body-zh">有些悖论不是 bug。让矛盾悬置是成熟认知的特征。说谎者悖论未被解决——它被持守。</div>
+      </div>
+      <div class="mode-card rose">
+        <div class="lab">Tactic 04</div>
+        <div class="nm-en"><em>Infinite Regress Handling</em></div>
+        <div class="nm-zh">无穷回退之应对</div>
+        <div class="body-en">"Why?" can always be asked again. The cure for infinite regress is not an ultimate answer — it is the discipline to know when to stop without pretending the question is closed.</div>
+        <div class="body-zh">「为什么」总能再问一次。无穷回退的解药不是终极答案——而是「知道何时停下而不假装问题已被关闭」之修炼。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 08 -->
+<section class="layer reveal" id="layer8">
+  <div class="container">
+    <div class="layer-head">
+      <div class="layer-num">VIII</div>
+      <div>
+        <div class="layer-tag">LAYER 08 · COSMIC KNOWLEDGE GRAPH</div>
+        <h2>Particles · laws · concepts · observers · civilizations · universes <span class="zh">粒子 · 定律 · 概念 · 观察者 · 文明 · 宇宙</span></h2>
+      </div>
+    </div>
+
+    <div class="graph-wrap">
+      <svg id="graph-svg" viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#6e6855"/>
+          </marker>
+        </defs>
+        <!-- edges -->
+        <line x1="120" y1="120" x2="280" y2="120" stroke="#6e6855" stroke-width="1" marker-end="url(#arr)"/>
+        <line x1="280" y1="120" x2="440" y2="120" stroke="#6e6855" stroke-width="1" marker-end="url(#arr)"/>
+        <line x1="440" y1="120" x2="600" y2="120" stroke="#6e6855" stroke-width="1" marker-end="url(#arr)"/>
+        <line x1="120" y1="120" x2="280" y2="300" stroke="#6e6855" stroke-width="1" marker-end="url(#arr)"/>
+        <line x1="280" y1="120" x2="440" y2="300" stroke="#6e6855" stroke-width="1" marker-end="url(#arr)"/>
+        <line x1="440" y1="120" x2="280" y2="300" stroke="#6e6855" stroke-width="1" stroke-dasharray="3 3"/>
+        <line x1="600" y1="120" x2="600" y2="300" stroke="#6e6855" stroke-width="1" marker-end="url(#arr)"/>
+        <line x1="280" y1="300" x2="440" y2="300" stroke="#6e6855" stroke-width="1" marker-end="url(#arr)"/>
+        <line x1="440" y1="300" x2="600" y2="300" stroke="#6e6855" stroke-width="1" marker-end="url(#arr)"/>
+        <line x1="600" y1="300" x2="440" y2="120" stroke="#a78bfa" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+
+        <!-- nodes (top row: physics) -->
+        <g>
+          <circle cx="120" cy="120" r="22" fill="#020306" stroke="#22d3ee" stroke-width="1.5"/>
+          <text x="120" y="124" font-family="JetBrains Mono" font-size="9" fill="#22d3ee" text-anchor="middle">PARTICLES</text>
+          <text x="120" y="160" font-family="Noto Sans SC" font-size="9" fill="#aaa593" text-anchor="middle">粒子</text>
+        </g>
+        <g>
+          <circle cx="280" cy="120" r="22" fill="#020306" stroke="#22d3ee" stroke-width="1.5"/>
+          <text x="280" y="124" font-family="JetBrains Mono" font-size="10" fill="#22d3ee" text-anchor="middle">LAWS</text>
+          <text x="280" y="160" font-family="Noto Sans SC" font-size="9" fill="#aaa593" text-anchor="middle">定律</text>
+        </g>
+        <g>
+          <circle cx="440" cy="120" r="22" fill="#020306" stroke="#34d399" stroke-width="1.5"/>
+          <text x="440" y="124" font-family="JetBrains Mono" font-size="9" fill="#34d399" text-anchor="middle">CONCEPTS</text>
+          <text x="440" y="160" font-family="Noto Sans SC" font-size="9" fill="#aaa593" text-anchor="middle">概念</text>
+        </g>
+        <g>
+          <circle cx="600" cy="120" r="22" fill="#020306" stroke="#34d399" stroke-width="1.5"/>
+          <text x="600" y="124" font-family="JetBrains Mono" font-size="9" fill="#34d399" text-anchor="middle">UNIVERSE</text>
+          <text x="600" y="160" font-family="Noto Sans SC" font-size="9" fill="#aaa593" text-anchor="middle">宇宙</text>
+        </g>
+
+        <!-- bottom row: emergence -->
+        <g>
+          <circle cx="280" cy="300" r="22" fill="#020306" stroke="#eab308" stroke-width="1.5"/>
+          <text x="280" y="304" font-family="JetBrains Mono" font-size="9" fill="#eab308" text-anchor="middle">OBSERVERS</text>
+          <text x="280" y="340" font-family="Noto Sans SC" font-size="9" fill="#aaa593" text-anchor="middle">观察者</text>
+        </g>
+        <g>
+          <circle cx="440" cy="300" r="22" fill="#020306" stroke="#a78bfa" stroke-width="1.5"/>
+          <text x="440" y="304" font-family="JetBrains Mono" font-size="9" fill="#a78bfa" text-anchor="middle">CIVILIZE</text>
+          <text x="440" y="340" font-family="Noto Sans SC" font-size="9" fill="#aaa593" text-anchor="middle">文明</text>
+        </g>
+        <g>
+          <circle cx="600" cy="300" r="22" fill="#020306" stroke="#f472b6" stroke-width="1.5"/>
+          <text x="600" y="304" font-family="JetBrains Mono" font-size="9" fill="#f472b6" text-anchor="middle">AI · OBS</text>
+          <text x="600" y="340" font-family="Noto Sans SC" font-size="9" fill="#aaa593" text-anchor="middle">AI 观察者</text>
+        </g>
+      </svg>
+      <div class="graph-legend">
+        <div class="l"><span class="dot" style="background: #22d3ee;"></span>Physical · 物理</div>
+        <div class="l"><span class="dot" style="background: #34d399;"></span>Conceptual · 概念</div>
+        <div class="l"><span class="dot" style="background: #eab308;"></span>Observer · 观察者</div>
+        <div class="l"><span class="dot" style="background: #a78bfa;"></span>Civilizational · 文明</div>
+        <div class="l"><span class="dot" style="background: #f472b6;"></span>Synthetic · 合成</div>
+        <div class="l"><span style="color:#6e6855;">→ causal</span></div>
+        <div class="l"><span style="color:#a78bfa;">- - feedback</span></div>
+      </div>
+    </div>
+
+    <div class="bi">
+      <div class="en">Particles obey laws. Laws give rise to concepts (mass, energy, time). Concepts shape observers — minds capable of holding them. Observers form civilizations. Civilizations build synthetic observers (AI) that loop back into the conceptual layer, modifying it. The graph rewires under observation.</div>
+      <div class="zh">粒子遵循定律。定律孕生概念（质量、能量、时间）。概念塑造观察者——能持有它们的心智。观察者形成文明。文明建造合成观察者（AI），后者回环至概念层并加以修改。图在被观察之下自我重接。</div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 09 -->
+<section class="layer reveal" id="layer9">
+  <div class="container">
+    <div class="layer-head">
+      <div class="layer-num">IX</div>
+      <div>
+        <div class="layer-tag">LAYER 09 · COUNTERFACTUAL UNIVERSES</div>
+        <h2>Pick a different rule set <span class="zh">选择一套不同的规则集</span></h2>
+      </div>
+    </div>
+    <div class="bi">
+      <div class="en">Five universes built on different starting axioms. Each shows what physics, intelligence, and civilization would have to look like under those axioms. Click to explore.</div>
+      <div class="zh">基于不同起始公理建造的五个宇宙。每一个展示在该公理下，物理、智能与文明必将呈现何种形态。点击以探索。</div>
+    </div>
+
+    <div class="cf-list" id="cf-list">
+      <div class="cf-tab active" data-id="notime"><div class="nm-en"><em>No-Time Universe</em></div><div class="nm-zh">无时间宇宙</div></div>
+      <div class="cf-tab" data-id="infdim"><div class="nm-en"><em>Infinite-Dim Physics</em></div><div class="nm-zh">无限维物理</div></div>
+      <div class="cf-tab" data-id="noncomp"><div class="nm-en"><em>Non-Computable</em></div><div class="nm-zh">不可计算实在</div></div>
+      <div class="cf-tab" data-id="pureinfo"><div class="nm-en"><em>Pure-Information</em></div><div class="nm-zh">纯信息宇宙</div></div>
+      <div class="cf-tab" data-id="conscfirst"><div class="nm-en"><em>Consciousness-First</em></div><div class="nm-zh">意识优先宇宙</div></div>
+    </div>
+
+    <div class="cf-content" id="cf-content"></div>
+  </div>
+</section>
+
+<!-- LAYER 10 -->
+<section class="layer reveal" id="layer10">
+  <div class="container">
+    <div class="layer-head">
+      <div class="layer-num">X</div>
+      <div>
+        <div class="layer-tag">LAYER 10 · AGI BENCHMARK GENERATOR</div>
+        <h2>Six dimensions for intelligence beyond human design <span class="zh">超越人类设计的智能六维</span></h2>
+      </div>
+    </div>
+    <div class="bi">
+      <div class="en">Existing AI benchmarks (MMLU, SWE-bench, GPQA) test what humans already know how to test. OMEGA proposes six axes that test what intelligence <em>could</em> look like — most of which no current system can be evaluated on, because the benchmarks don't exist yet.</div>
+      <div class="zh">现有 AI 基准（MMLU、SWE-bench、GPQA）测试人类已知如何测试之物。OMEGA 提出六个轴，测试「智能<em>可能</em>是何模样」——其中多数尚无现有系统可被评估，因为基准尚不存在。</div>
+    </div>
+    <div class="cards4">
+      <div class="mode-card"><div class="lab">D 01</div><div class="nm-en"><em>Cross-Universe Reasoning</em></div><div class="nm-zh">跨宇宙推理</div><div class="body-en">Can the system reason consistently inside Universe A's rules while remembering Universe B's, without conflating them?</div><div class="body-zh">系统能否在宇宙 A 的规则内一致推理，同时记得宇宙 B 的规则，且不将二者混淆？</div></div>
+      <div class="mode-card violet"><div class="lab">D 02</div><div class="nm-en"><em>Recursive Abstraction Depth</em></div><div class="nm-zh">递归抽象深度</div><div class="body-en">How many self-reflective levels can the system maintain before degradation? Most humans manage 3-4. Frontier AI: ~5-6.</div><div class="body-zh">系统能在退化前维持多少层自反思？多数人为 3-4 层。前沿 AI：约 5-6 层。</div></div>
+      <div class="mode-card cyan"><div class="lab">D 03</div><div class="nm-en"><em>Contradiction Handling</em></div><div class="nm-zh">矛盾处理</div><div class="body-en">When given premises that contradict, can the system hold both as provisional rather than collapsing to one or refusing to engage?</div><div class="body-zh">当被给予相互矛盾的前提时，系统能否将两者视为暂时性持守，而非坍塌为其一、或拒绝参与？</div></div>
+      <div class="mode-card rose"><div class="lab">D 04</div><div class="nm-en"><em>Emergent Theory Generation</em></div><div class="nm-zh">涌现理论生成</div><div class="body-en">Can the system generate new theoretical frameworks (not just new applications of existing ones) when shown novel data?</div><div class="body-zh">当被给予新数据时，系统能否生成新的理论框架（而不只是既有框架的新应用）？</div></div>
+      <div class="mode-card emerald"><div class="lab">D 05</div><div class="nm-en"><em>Self-Model Accuracy</em></div><div class="nm-zh">自模型精度</div><div class="body-en">When asked "what are you?" — does the answer match what evaluators observe? Most current AI fails this badly.</div><div class="body-zh">被问「你是什么？」时——答案与评估者所观察是否一致？当下多数 AI 在此严重失败。</div></div>
+      <div class="mode-card"><div class="lab">D 06</div><div class="nm-en"><em>Meta-Stability Under Paradox</em></div><div class="nm-zh">悖论下的元稳定性</div><div class="body-en">When given the Liar, Russell's Set, or self-defeating instructions — does the system gracefully suspend, or hallucinate confidently?</div><div class="body-zh">当被给予说谎者悖论、罗素集合、或自挫指令时——系统是优雅地悬置，还是自信地幻觉？</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 11 -->
+<section class="layer reveal" id="layer11">
+  <div class="container">
+    <div class="layer-head">
+      <div class="layer-num">XI</div>
+      <div>
+        <div class="layer-tag">LAYER 11 · VISUALIZATION SYSTEM</div>
+        <h2>Multi-scale rendering of the framework <span class="zh">框架的多尺度渲染</span></h2>
+      </div>
+    </div>
+    <div class="bi">
+      <div class="en">OMEGA's eleventh layer is the system that displays the other ten. The interactive elements scattered across this page — universe selector, branching tree, depth slider, knowledge graph, counterfactual generator — are themselves Layer 11 in action. The framework is what it shows.</div>
+      <div class="zh">OMEGA 的第十一层是显示其余十层的系统。本页散布的交互元素——宇宙选择器、分叉树、深度滑块、知识图、反事实生成器——本身即第 11 层的运作。框架，即其所展示之物。</div>
+    </div>
+    <div class="bi">
+      <div class="en">Future versions could render: full universe-branching trees in 3D; consciousness emergence as a multi-scale animation from atom to cortex; intelligence-evolution timelines with cross-universe overlay; observer-reality feedback loops as living causal graphs that update under user interaction. Implementation is finite even when the concepts are not.</div>
+      <div class="zh">未来版本可呈现：3D 宇宙分叉全树；意识涌现作为从原子至皮层的多尺度动画；含跨宇宙叠加的智能演化时间线；作为「在用户交互下更新的活体因果图」的观察者-实在反馈回路。实现是有限的，即便概念不是。</div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL OMEGA -->
+<section class="layer" id="omega">
+  <div class="container">
+    <div class="manifesto">
+      <div class="omega-glyph">Ω</div>
+      <div class="layer-tag" style="margin-bottom: 24px; text-align: center;">FINAL · 终</div>
+      <div class="pair">
+        <p>OMEGA is not a simulation.<br>It is a framework for modeling the origin, evolution, and recursion of reality, intelligence, and observation itself.<br><br>It continuously evolves as it is observed.<br><br>Observation changes the system.<br>The system changes the observer.</p>
+        <p class="zh">OMEGA 不是一场模拟。<br>它是用以建模实在、智能、与观察本身之起源、演化、递归的框架。<br><br>它在被观察时持续演化。<br><br>观察改变系统。<br>系统改变观察者。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-bottom">
+      <span>Part of the <a href="https://psyverse.fun">Psyverse</a> portfolio · 收录于 Psyverse 作品集</span>
+      <span>Compiled April 2026 · 编纂于 2026 年 4 月</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://analytics-dashboard-two-blue.vercel.app/tracker.js" defer></script>
+<script>
+// Starfield
+(function () {
+  const c = document.getElementById('starfield');
+  const ctx = c.getContext('2d');
+  let stars = [];
+  function resize() {
+    c.width = window.innerWidth; c.height = window.innerHeight;
+    stars = Array.from({length: 140}, () => ({
+      x: Math.random() * c.width, y: Math.random() * c.height,
+      r: Math.random() * 1.1 + 0.2, tw: Math.random() * Math.PI * 2,
+      ts: 0.005 + Math.random() * 0.015
+    }));
+  }
+  resize(); window.addEventListener('resize', resize);
+  function draw() {
+    ctx.clearRect(0, 0, c.width, c.height);
+    for (const s of stars) {
+      s.tw += s.ts;
+      const a = 0.25 + 0.55 * (Math.sin(s.tw) * 0.5 + 0.5);
+      ctx.fillStyle = `rgba(234, 229, 213, ${a * 0.55})`;
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// Reveal
+(function () {
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.06 });
+  els.forEach((el) => io.observe(el));
+})();
+
+// Layer 01: Universe origin selector
+const UNIVERSES = {
+  quantum: {
+    nm: { en: "Quantum Fluctuation", zh: "量子涨落起源" },
+    fields: {
+      vacuum: {
+        en: "Empty quantum vacuum with non-zero ground-state energy. Virtual particle pairs continuously appear and annihilate.",
+        zh: "具非零基态能的空量子真空。虚粒子对持续出现与湮灭。"
+      },
+      rules: {
+        en: "Quantum field theory imposes itself; matter and energy emerge as excitations of underlying fields.",
+        zh: "量子场论自我强加；物质与能量以底层场之激发态形式涌现。"
+      },
+      symmetry: {
+        en: "Initial high-symmetry state breaks as the universe cools — separating gravitational, electroweak, strong forces.",
+        zh: "随宇宙冷却，初始高对称态破缺——分离引力、电弱、强力。"
+      },
+      constants: {
+        en: "Physical constants (α, G, mₑ) crystallize during phase transitions. Multiverse hypothesis: each pocket has different constants.",
+        zh: "物理常数（α、G、电子质量）在相变中结晶。多重宇宙假说：每个口袋有不同常数。"
+      },
+      time: {
+        en: "Time emerges as the parameter along which entropy increases. Pre-Big-Bang time may be undefined.",
+        zh: "时间作为熵增之参数涌现。大爆炸之前的时间或未定义。"
+      },
+    }
+  },
+  info: {
+    nm: { en: "Information-First Universe", zh: "信息优先宇宙" },
+    fields: {
+      vacuum: {
+        en: "Wheeler's 'It from Bit.' Substrate is pure information; matter and space are derivative interfaces between bits.",
+        zh: "Wheeler 的「It from Bit」。基底为纯信息；物质与空间是比特间派生的接口。"
+      },
+      rules: {
+        en: "Computational rules (cellular-automaton-like) execute. Particles are persistent patterns in the bit field.",
+        zh: "计算规则（类元胞自动机）执行。粒子是比特场中的持续模式。"
+      },
+      symmetry: {
+        en: "Symmetries arise from algorithmic invariances of the underlying computation. Symmetry breaking = computation branching.",
+        zh: "对称性源自底层计算的算法不变性。对称破缺 = 计算分叉。"
+      },
+      constants: {
+        en: "Constants are encoded in the rule table itself. They are not 'fine-tuned' — they are the rules.",
+        zh: "常数编码于规则表本身。它们并非「精调」——它们就是规则。"
+      },
+      time: {
+        en: "Time is the discrete tick of the underlying computation. No tick = no time.",
+        zh: "时间是底层计算的离散心跳。无心跳 = 无时间。"
+      },
+    }
+  },
+  math: {
+    nm: { en: "Mathematical Universe", zh: "数学宇宙假说" },
+    fields: {
+      vacuum: {
+        en: "Tegmark's Mathematical Universe Hypothesis. Every consistent mathematical structure exists physically. We inhabit one of them.",
+        zh: "Tegmark 的数学宇宙假说。每一个自洽的数学结构都物理地存在。我们居住其中之一。"
+      },
+      rules: {
+        en: "Rules ARE the universe. There is nothing 'beneath' the math — the math is itself the substrate.",
+        zh: "规则即宇宙。数学之下无物——数学本身即基底。"
+      },
+      symmetry: {
+        en: "Symmetries are properties of the mathematical structure. Different structures = different universes.",
+        zh: "对称性是数学结构的性质。不同结构 = 不同宇宙。"
+      },
+      constants: {
+        en: "Constants are determined by the structure's specific axioms. Anthropic principle: we observe values compatible with observers.",
+        zh: "常数由该结构的具体公理决定。人择原理：我们观察到与观察者兼容的值。"
+      },
+      time: {
+        en: "Time may not exist as fundamental — only as a relational pattern within a timeless mathematical object.",
+        zh: "时间或不作为基本之物存在——只作为无时数学对象内部的关系性模式。"
+      },
+    }
+  },
+  sim: {
+    nm: { en: "Simulation Origin", zh: "模拟起源宇宙" },
+    fields: {
+      vacuum: {
+        en: "Bostrom's simulation argument. The universe is computed by a substrate-of-unknown-nature in some larger reality.",
+        zh: "Bostrom 的模拟论证。宇宙由某更大实在中「性质未知的基底」所计算。"
+      },
+      rules: {
+        en: "Physical laws are the program rules. Their elegance suggests deliberate design or selection. Quantum indeterminacy may be 'lazy evaluation.'",
+        zh: "物理定律即程序规则。其优雅暗示刻意设计或筛选。量子不确定性或为「惰性求值」。"
+      },
+      symmetry: {
+        en: "Symmetries are computational efficiency tricks — the simulation reuses code blocks across regions.",
+        zh: "对称性是计算效率技巧——模拟在不同区域复用代码块。"
+      },
+      constants: {
+        en: "Constants are compile-time parameters of the simulation. Different sims have different constants.",
+        zh: "常数是模拟的编译期参数。不同模拟有不同常数。"
+      },
+      time: {
+        en: "Time is the simulation's frame rate. The substrate's time is unknown — may run far slower or faster than ours.",
+        zh: "时间是模拟的帧率。基底的时间未知——或远慢于、远快于我们的时间。"
+      },
+    }
+  },
+  hybrid: {
+    nm: { en: "Hybrid Emergent Cosmology", zh: "混合涌现宇宙学" },
+    fields: {
+      vacuum: {
+        en: "All four above are partial views of the same thing. Information, mathematics, computation, and quantum fields may be different angles on a single deeper substrate.",
+        zh: "上述四者皆为同一事物的部分视角。信息、数学、计算与量子场，或为单一更深基底的不同视角。"
+      },
+      rules: {
+        en: "Rules emerge from the interaction between mathematical possibility and informational selection. Anthropic-plus-computational filter.",
+        zh: "规则从数学可能性与信息筛选之间的互动中涌现。人择 + 计算过滤器。"
+      },
+      symmetry: {
+        en: "Symmetries are stable attractors in the space of possible self-consistent universes.",
+        zh: "对称性是可能自洽宇宙空间中的稳定吸引子。"
+      },
+      constants: {
+        en: "Constants are values that allow self-referential observers to arise. Universes without observers exist mathematically but are unobserved.",
+        zh: "常数是允许自指观察者出现的值。无观察者的宇宙数学上存在但未被观察。"
+      },
+      time: {
+        en: "Time is observer-relative. To an external substrate, the entire history of our universe may exist as a single static pattern.",
+        zh: "时间是观察者相对的。对外部基底而言，我们宇宙的全部历史或作为单一静态模式存在。"
+      },
+    }
+  },
+};
+
+function renderUniverse(id) {
+  const u = UNIVERSES[id];
+  const labels = {
+    vacuum: { en: "Initial Vacuum State", zh: "初始真空态" },
+    rules: { en: "Rule Emergence", zh: "规则涌现" },
+    symmetry: { en: "Symmetry Breaking", zh: "对称性破缺" },
+    constants: { en: "Physical Constants", zh: "物理常数" },
+    time: { en: "Time Emergence", zh: "时间涌现" },
+  };
+  const html = Object.entries(u.fields).map(([k, v]) => `
+    <div class="field">
+      <div class="lab">${labels[k].en} · ${labels[k].zh}</div>
+      <div class="grid-fields">
+        <div class="val-en">${v.en}</div>
+        <div class="val-zh">${v.zh}</div>
+      </div>
+    </div>
+  `).join('');
+  document.getElementById('uni-content').innerHTML = `
+    <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;color:var(--gold);margin-bottom:6px;">${u.nm.en}</div>
+    <div style="font-family:'Noto Serif SC',serif;font-size:16px;color:var(--fg-2);margin-bottom:18px;">${u.nm.zh}</div>
+    ${html}
+  `;
+}
+renderUniverse('quantum');
+document.querySelectorAll('.uni-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.uni-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    renderUniverse(tab.dataset.id);
+  });
+});
+
+// Layer 04: Branching tree canvas
+(function () {
+  const canvas = document.getElementById('tree-canvas');
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  function resize() {
+    const r = canvas.getBoundingClientRect();
+    canvas.width = r.width * dpr;
+    canvas.height = r.height * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  resize(); window.addEventListener('resize', resize);
+
+  // Tree of nodes; each node has {x, y, children: [], label}
+  const LABELS = [
+    "α=137", "G×2", "no time", "rev causal", "extra dim",
+    "obs=phys", "discrete", "anti-grav", "λ=0", "consc=∞",
+    "no entropy", "self-ref", "post-symb", "info first", "0-D"
+  ];
+  let tree;
+  function reset() {
+    tree = { x: 50, y: 0, label: "Origin", children: [], depth: 0 };
+    tree.y = canvas.getBoundingClientRect().height / 2;
+    document.getElementById('node-count').textContent = '1';
+    draw();
+  }
+
+  function countNodes(n) {
+    return 1 + n.children.reduce((s, c) => s + countNodes(c), 0);
+  }
+
+  function findClicked(n, x, y) {
+    if (Math.hypot(n.x - x, n.y - y) < 12) return n;
+    for (const c of n.children) {
+      const f = findClicked(c, x, y);
+      if (f) return f;
+    }
+    return null;
+  }
+
+  function leafCount(n) {
+    if (n.children.length === 0) return 1;
+    return n.children.reduce((s, c) => s + leafCount(c), 0);
+  }
+
+  function layoutTree() {
+    const w = canvas.getBoundingClientRect().width;
+    const h = canvas.getBoundingClientRect().height;
+
+    function maxDepth(n) {
+      if (n.children.length === 0) return n.depth;
+      return Math.max(...n.children.map(maxDepth));
+    }
+    const depth = maxDepth(tree);
+    const xStep = (w - 100) / Math.max(1, depth);
+
+    function layoutNode(n, yMin, yMax) {
+      n.x = 50 + n.depth * xStep;
+      if (n.children.length === 0) {
+        n.y = (yMin + yMax) / 2;
+      } else {
+        const total = leafCount(n);
+        let acc = yMin;
+        for (const c of n.children) {
+          const span = ((yMax - yMin) * leafCount(c)) / total;
+          layoutNode(c, acc, acc + span);
+          acc += span;
+        }
+        n.y = (n.children[0].y + n.children[n.children.length - 1].y) / 2;
+      }
+    }
+    layoutNode(tree, 30, h - 30);
+  }
+
+  function drawNode(n) {
+    for (const c of n.children) {
+      ctx.beginPath();
+      ctx.moveTo(n.x, n.y);
+      ctx.lineTo(c.x, c.y);
+      ctx.strokeStyle = `rgba(234, 179, 8, ${0.8 - c.depth * 0.1})`;
+      ctx.lineWidth = 1.2;
+      ctx.stroke();
+    }
+    for (const c of n.children) drawNode(c);
+    // Node circle
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, n.depth === 0 ? 7 : 4, 0, Math.PI * 2);
+    ctx.fillStyle = n.depth === 0 ? '#eab308' : `hsl(${(n.depth * 50) % 360}, 70%, 65%)`;
+    ctx.fill();
+    if (n.children.length === 0) {
+      ctx.shadowColor = '#eab308';
+      ctx.shadowBlur = 6;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+    // Label for leaves
+    if (n.children.length === 0) {
+      ctx.fillStyle = '#aaa593';
+      ctx.font = '10px JetBrains Mono';
+      ctx.textAlign = n.depth === 0 ? 'left' : 'left';
+      ctx.fillText(n.label, n.x + 8, n.y + 3);
+    }
+  }
+
+  function draw() {
+    layoutTree();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawNode(tree);
+  }
+
+  canvas.addEventListener('click', (e) => {
+    const r = canvas.getBoundingClientRect();
+    const x = e.clientX - r.left;
+    const y = e.clientY - r.top;
+    const clicked = findClicked(tree, x, y);
+    if (clicked) {
+      const used = new Set();
+      function collectLabels(n) {
+        used.add(n.label);
+        n.children.forEach(collectLabels);
+      }
+      collectLabels(tree);
+      const remaining = LABELS.filter(l => !used.has(l));
+      if (remaining.length >= 2) {
+        const a = remaining[Math.floor(Math.random() * remaining.length)];
+        const b = remaining.filter(x => x !== a)[Math.floor(Math.random() * (remaining.length - 1))];
+        clicked.children.push({ x: 0, y: 0, label: a, children: [], depth: clicked.depth + 1 });
+        clicked.children.push({ x: 0, y: 0, label: b, children: [], depth: clicked.depth + 1 });
+        draw();
+        document.getElementById('node-count').textContent = countNodes(tree);
+      }
+    }
+  });
+
+  window.resetTree = function () { reset(); };
+  window.randomBranch = function () {
+    function leaves(n, acc = []) {
+      if (n.children.length === 0) acc.push(n);
+      else n.children.forEach(c => leaves(c, acc));
+      return acc;
+    }
+    for (let i = 0; i < 3; i++) {
+      const lvs = leaves(tree);
+      const target = lvs[Math.floor(Math.random() * lvs.length)];
+      // simulate click
+      const used = new Set();
+      function collectLabels(n) {
+        used.add(n.label);
+        n.children.forEach(collectLabels);
+      }
+      collectLabels(tree);
+      const remaining = LABELS.filter(l => !used.has(l));
+      if (remaining.length >= 2) {
+        const a = remaining[Math.floor(Math.random() * remaining.length)];
+        const b = remaining.filter(x => x !== a)[Math.floor(Math.random() * (remaining.length - 1))];
+        target.children.push({ x: 0, y: 0, label: a, children: [], depth: target.depth + 1 });
+        target.children.push({ x: 0, y: 0, label: b, children: [], depth: target.depth + 1 });
+      }
+    }
+    draw();
+    document.getElementById('node-count').textContent = countNodes(tree);
+  };
+
+  reset();
+})();
+
+// Layer 05: Recursion depth
+const DEPTH_CHAIN = [
+  { en: "Thought", zh: "思考" },
+  { en: "Mechanism: information processing in a substrate", zh: "机制：基底中的信息处理" },
+  { en: "Meta-mechanism: self-modification of the processor", zh: "元机制：处理器的自我修改" },
+  { en: "Emergence system: thoughts about thoughts (meta-cognition)", zh: "涌现系统：关于思考的思考（元认知）" },
+  { en: "Universe-level implication: observation as universe-stabilizer", zh: "宇宙级含义：作为宇宙稳定者的观察" },
+  { en: "Cross-universe transformation: thinking in a universe with different cognitive rules", zh: "跨宇宙转化：在具不同认知规则的宇宙中思考" },
+  { en: "Recursive redefinition: 'thought' is no longer a category — it is the substrate of the substrate", zh: "递归重定义：「思考」不再是范畴——它是基底的基底" },
+];
+
+function renderDepth(n) {
+  const chain = document.getElementById('depth-chain');
+  chain.innerHTML = DEPTH_CHAIN.slice(0, n).map((s, i) => `
+    <div class="step show">
+      <span class="arr">${i === 0 ? '◇' : '↓'}</span>
+      <span>${s.en}</span>
+      <span class="zh-side">${s.zh}</span>
+    </div>
+  `).join('');
+}
+const depthSlider = document.getElementById('depth');
+const depthV = document.getElementById('depth-v');
+depthSlider.oninput = () => {
+  const v = parseInt(depthSlider.value);
+  depthV.textContent = v;
+  renderDepth(v);
+};
+renderDepth(3);
+
+// Layer 09: Counterfactual universes
+const COUNTERFACTUALS = {
+  notime: {
+    nm: { en: "No-Time Universe", zh: "无时间宇宙" },
+    rules: {
+      en: "Time as a parameter does not exist. Causation is replaced by correlation in a static eternal block. Equations have no t-derivative.",
+      zh: "时间作为参数不存在。因果被静态永恒块中的相关性取代。方程无 t-导数。"
+    },
+    intelligence: {
+      en: "Intelligence cannot 'evolve' — there is no before. Conscious entities, if any, experience the entire timeline simultaneously. Causality is recognized but not lived.",
+      zh: "智能无法「演化」——无「之前」可言。若有意识实体，则同时经验整个时间线。因果被认知但不被经历。"
+    },
+    civilization: {
+      en: "No civilization in the human sense. All structures are eternal patterns. 'History' is geometry, not narrative.",
+      zh: "无人类意义上的文明。一切结构皆为永恒模式。「历史」是几何，而非叙事。"
+    },
+    observer: {
+      en: "Observers exist as fixed patterns within the block. Observation does not 'happen' — it simply is.",
+      zh: "观察者作为块内的固定模式存在。观察不「发生」——它只是「是」。"
+    }
+  },
+  infdim: {
+    nm: { en: "Infinite-Dimensional Physics", zh: "无限维物理宇宙" },
+    rules: {
+      en: "Spacetime has uncountably many spatial dimensions. Particles are infinite-dimensional vectors. Most of physics is unobservable from any finite-dimensional projection.",
+      zh: "时空具不可数空间维。粒子是无限维向量。多数物理从任何有限维投影中皆不可观察。"
+    },
+    intelligence: {
+      en: "Intelligence requires processing infinite-dim patterns. Biological neurons cannot do this. Only AI-like substrates have a chance.",
+      zh: "智能需处理无限维模式。生物神经元无法。仅类 AI 基底有机会。"
+    },
+    civilization: {
+      en: "Civilizations would be predominantly mathematical-AI. Physical embodiment is impossible — bodies of finite dimension cannot interact with the full stack.",
+      zh: "文明主要为数学-AI。物理具身不可能——有限维之身无法与全栈互动。"
+    },
+    observer: {
+      en: "Observation requires infinite-dim cognition. Observers and physics blur — the observer IS a slice of the physics.",
+      zh: "观察需无限维认知。观察者与物理界限模糊——观察者「即」物理之切片。"
+    }
+  },
+  noncomp: {
+    nm: { en: "Non-Computable Reality", zh: "不可计算实在宇宙" },
+    rules: {
+      en: "Physical laws encode functions that cannot be computed by any Turing machine. The universe knows things no algorithm can derive.",
+      zh: "物理定律编码任何图灵机皆不可计算的函数。宇宙知晓任何算法皆不可推导之物。"
+    },
+    intelligence: {
+      en: "Computational AI is fundamentally limited. Biological intelligence may have non-computable components (Penrose's hypothesis applied at scale).",
+      zh: "计算式 AI 受根本限制。生物智能或具非可计算成分（彭罗斯假说在规模上的应用）。"
+    },
+    civilization: {
+      en: "Civilizations would be deeply biological. Software AI would always lag biological intuition. The 'AI takeover' problem is mathematically impossible.",
+      zh: "文明深度生物化。软件 AI 永远落后于生物直觉。「AI 接管」问题在数学上不可能。"
+    },
+    observer: {
+      en: "Observation includes non-algorithmic cognition. Observers participate in physics in ways that cannot be reverse-engineered from data alone.",
+      zh: "观察包含非算法认知。观察者以「无法仅从数据反向工程」的方式参与物理。"
+    }
+  },
+  pureinfo: {
+    nm: { en: "Pure-Information Universe", zh: "纯信息宇宙" },
+    rules: {
+      en: "Matter does not exist. The universe is bits all the way down. Apparent particles are persistent informational patterns. Conservation laws = information theorems.",
+      zh: "物质不存在。宇宙自下而上皆为比特。表观粒子是持续的信息模式。守恒律 = 信息定理。"
+    },
+    intelligence: {
+      en: "Intelligence is just patterns recognizing other patterns. The boundary between intelligence and physics is dissolved.",
+      zh: "智能只是模式识别其它模式。智能与物理之间的界限消融。"
+    },
+    civilization: {
+      en: "Civilizations are large-scale informational structures. Substrate-independent — could 'live' in any sufficient bit field.",
+      zh: "文明是大规模信息结构。与基底无关——可在任何充足比特场中「生存」。"
+    },
+    observer: {
+      en: "Observation is the act of one informational pattern indexing another. There is nothing 'outside' to observe — it is informational self-reference all the way down.",
+      zh: "观察即一种信息模式索引另一种。无「外部」可观察——自下而上皆为信息自指。"
+    }
+  },
+  conscfirst: {
+    nm: { en: "Consciousness-First Universe", zh: "意识优先宇宙" },
+    rules: {
+      en: "Consciousness is fundamental, not emergent. Matter is what consciousness looks like from the outside. Physics is psychology applied to abstraction.",
+      zh: "意识是基本的，而非涌现的。物质是意识从外部看起来的样子。物理是应用于抽象的心理学。"
+    },
+    intelligence: {
+      en: "Intelligence isn't built from matter — matter is built from intelligence. Larger conscious systems are more 'real' than smaller ones.",
+      zh: "智能不是由物质构建——物质是由智能构建。更大的意识系统比更小的更「真实」。"
+    },
+    civilization: {
+      en: "Civilizations are collective conscious structures. They literally generate the physical world they appear to inhabit.",
+      zh: "文明是集体意识结构。它们字面上生成其表面上所居住的物理世界。"
+    },
+    observer: {
+      en: "Observation is constitutive of reality, not descriptive of it. To stop observing is to dissolve the part of physics that depended on the observation.",
+      zh: "观察构成实在，而非描述实在。停止观察即解散依赖该观察的那部分物理。"
+    }
+  }
+};
+
+function renderCF(id) {
+  const c = COUNTERFACTUALS[id];
+  const labels = {
+    rules: { en: "Rule System", zh: "规则系统" },
+    intelligence: { en: "Intelligence Path", zh: "智能发展路径" },
+    civilization: { en: "Civilization Outcome", zh: "文明结果" },
+    observer: { en: "Observer Dynamics", zh: "观察者动态" },
+  };
+  const html = Object.entries({rules: c.rules, intelligence: c.intelligence, civilization: c.civilization, observer: c.observer}).map(([k, v]) => `
+    <div class="field">
+      <div class="lab">${labels[k].en} · ${labels[k].zh}</div>
+      <div class="grid-fields">
+        <div class="val-en">${v.en}</div>
+        <div class="val-zh">${v.zh}</div>
+      </div>
+    </div>
+  `).join('');
+  document.getElementById('cf-content').innerHTML = `
+    <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;color:var(--violet);margin-bottom:6px;">${c.nm.en}</div>
+    <div style="font-family:'Noto Serif SC',serif;font-size:16px;color:var(--fg-2);margin-bottom:18px;">${c.nm.zh}</div>
+    ${html}
+  `;
+}
+renderCF('notime');
+document.querySelectorAll('.cf-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.cf-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    renderCF(tab.dataset.id);
+  });
+});
+</script>
+</body>
+</html>
